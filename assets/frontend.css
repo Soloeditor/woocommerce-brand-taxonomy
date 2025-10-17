@@ -1,0 +1,83 @@
+.wbt-brand-wrap {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.wbt-brand-wrap .wbt-brand-logo img {
+    max-width: 200px;
+    height: auto;
+    display: inline-block;
+}
+
+.wbt-brand-description {
+    margin-top: 1rem;
+}
+
+.wbt-brand-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.wbt-brand-grid.cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.wbt-brand-grid.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.wbt-brand-grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.wbt-brand-grid.cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.wbt-brand-grid.cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.wbt-brand-grid.cols-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+
+@media (max-width: 1024px) {
+    .wbt-brand-grid.cols-5,
+    .wbt-brand-grid.cols-6 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .wbt-brand-grid.cols-3,
+    .wbt-brand-grid.cols-4,
+    .wbt-brand-grid.cols-5,
+    .wbt-brand-grid.cols-6 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .wbt-brand-grid { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+}
+
+.wbt-brand-card {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #fff;
+    transition: box-shadow 0.2s ease;
+}
+
+.wbt-brand-card:hover,
+.wbt-brand-card:focus-within {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+}
+
+.wbt-brand-card .wbt-brand-logo img {
+    max-width: 160px;
+    height: auto;
+}
+
+.wbt-brand-placeholder {
+    display: inline-flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.wbt-brand-name {
+    display: block;
+    margin-top: 0.75rem;
+    font-weight: 600;
+}
