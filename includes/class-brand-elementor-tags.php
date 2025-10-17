@@ -41,6 +41,13 @@ if ( ! class_exists( 'WBT_Brand_Elementor_Tags' ) ) {
         /**
          * Register custom dynamic tags.
          *
+         * @param DynamicTags_Manager|\Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Manager instance.
+         */
+        public function register_tags( $dynamic_tags_manager ) {
+            if ( ! $dynamic_tags_manager instanceof DynamicTags_Manager && ! $dynamic_tags_manager instanceof \Elementor\Core\DynamicTags\Manager ) {
+                return;
+            }
+
          * @param DynamicTags_Manager $dynamic_tags_manager Manager instance.
          */
         public function register_tags( DynamicTags_Manager $dynamic_tags_manager ) {
