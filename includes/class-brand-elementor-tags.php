@@ -48,6 +48,9 @@ if ( ! class_exists( 'WBT_Brand_Elementor_Tags' ) ) {
                 return;
             }
 
+         * @param DynamicTags_Manager $dynamic_tags_manager Manager instance.
+         */
+        public function register_tags( DynamicTags_Manager $dynamic_tags_manager ) {
             require_once WBT_PLUGIN_PATH . 'includes/elementor-tag-brand-name.php';
             require_once WBT_PLUGIN_PATH . 'includes/elementor-tag-brand-logo.php';
 
