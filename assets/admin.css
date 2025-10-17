@@ -1,0 +1,10 @@
+.wbt-brand-logo-preview img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.wbt-remove-logo.hidden {
+    display: none;
+}
